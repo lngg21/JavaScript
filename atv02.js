@@ -7,8 +7,7 @@ function executar(fn, num1 = 0, num2 = 0)
          { 
         console.log(fn(num1, num2)); // escreva fn passando os argumentos dos parâmetros num1 e num2
          };
-    } while (num1 <= 1|| num2 <=5 ); // faça o código acima, enquanto o valor de num1 for menor/igual a 1 ou o valor de num2menor/igual a 5
-                                     
+    } while (num1 <= 1|| num2 <=5 ); 
 
 };
 
