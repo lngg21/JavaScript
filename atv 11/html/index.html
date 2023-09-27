@@ -1,0 +1,75 @@
+<DOCTYPE html>
+    <html lang="pt-Br">
+        <head>
+            <style>h1, h2 {
+                color:#F1F6F9 ;
+            }
+            body{
+                background-color:#9cabc7;
+                font-family: 'Poppins', sans-serif;
+            }
+            hr{
+                overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+
+            }
+            h1, h3{
+                text-align: center;
+                color:#F1F6F9;
+                text-decoration: wavy;
+                
+            }
+            h4{
+                color:#212A3E;
+            }
+            p{
+                text-align: start;
+                color:#FEFAE0
+            } 
+</style>
+            <meta charset="UTF-8">
+            <title>Contatos</title>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+          <br>
+     
+            <form action="" method="">
+                <label for="agencia">Agência: </label>
+                <input type="number" name="agencia" id="agencia"><br>
+                <label for="Numero">Número:</label>
+                <input type="number" name="Numero" id="numero"><br>
+                <label for="conta">Tipo de Conta:</label>
+                <select name="conta" id="tipo">
+                <option value="Bancaria">Conta Bancaria</option>
+                <option value="Corrente">Conta Corrente</option>
+                <option value="Universitária">Conta Universitária</option>
+                <option value="Poupança">Conta Poupança</option>
+                </select><br>
+               <div class="actions">
+                <button onclick="inserirContas()">Inserir Contas</button>
+                    <button onclick="visualizarContas()">Visualizar contas</button>
+                    <button onclick="deletarConta()">Deletar conta</button>
+                </div>
+                <br> 
+                <label for="saldo"> <strong>Saldo:</strong> </label>
+                <input type="text" id="saldo">
+                <button onclick="inserirConta()" class="button">Inserir</button>
+    <br><br>
+               
+                <label for="valorSaque"> <strong>Valor a Sacar:</strong> </label>
+                <input type="text" id="valorSaque">
+                <button onclick="sacar()" class="button">Sacar</button>
+                <br> <hr>
+                <h2>Contas:</h2>    
+                <div id="listaContas" class="lista-contas"></div>
+
+                
+            </body>
+
+    
+                </html>
